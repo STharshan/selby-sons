@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Phone, MapPin, Menu, X, ArrowRight, ShieldCheck } from 'lucide-react';
+import logoImage from '../../assets/logo.png';
 
 interface NavbarProps {
   onOpenQuote: () => void;
@@ -33,19 +34,11 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenQuote }) => {
         <div className="flex items-center justify-between">
           {/* Logo matching reference image */}
           <a href="#" className="flex items-center gap-3 group">
-            <div className="w-10 h-10 border-2 border-[#dfd7c6] flex items-center justify-center p-1 relative transition-transform duration-300 group-hover:scale-105">
-              <div className="w-full h-full border border-[#dfd7c6]/60 flex items-center justify-center">
-                <span className="text-xs font-bold text-[#dfd7c6]">S&S</span>
-              </div>
-            </div>
-            <div className="flex flex-col">
-              <span className="text-lg sm:text-xl font-bold tracking-wider text-white uppercase leading-none font-['Outfit']">
-                SELBY & SON
-              </span>
-              <span className="text-[10px] tracking-[0.25em] text-[#dfd7c6] font-medium uppercase mt-0.5">
-                GLAZING
-              </span>
-            </div>
+            <img
+              src={logoImage}
+              alt="Selby & Son Glazing logo"
+              className="w-25 h-20 object-contain transition-transform duration-300 group-hover:scale-105"
+            />
           </a>
 
           {/* Desktop Navigation Links */}

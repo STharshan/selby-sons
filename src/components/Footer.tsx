@@ -1,5 +1,6 @@
 import React from 'react';
 import { Phone, MapPin, Mail, ShieldCheck, Facebook, Instagram } from 'lucide-react';
+import logoImage from '../../assets/logo.png';
 
 interface FooterProps {
   onOpenQuote: () => void;
@@ -14,19 +15,11 @@ export const Footer: React.FC<FooterProps> = ({ onOpenQuote }) => {
           {/* Col 1: Logo & Socials */}
           <div className="lg:col-span-1 space-y-4">
             <a href="#" className="flex items-center gap-3 group">
-              <div className="w-9 h-9 border-2 border-[#dfd7c6] flex items-center justify-center p-1">
-                <div className="w-full h-full border border-[#dfd7c6]/60 flex items-center justify-center">
-                  <span className="text-[10px] font-bold text-[#dfd7c6]">S&S</span>
-                </div>
-              </div>
-              <div className="flex flex-col">
-                <span className="text-base font-bold tracking-wider text-white uppercase font-['Outfit']">
-                  SELBY & SON
-                </span>
-                <span className="text-[9px] tracking-[0.25em] text-[#dfd7c6] uppercase">
-                  GLAZING
-                </span>
-              </div>
+              <img
+                src={logoImage}
+                alt="Selby & Son Glazing logo"
+                className="w-25 h-20 object-contain"
+              />
             </a>
 
             <div className="flex items-center gap-3 pt-2">
