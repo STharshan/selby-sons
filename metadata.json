@@ -1,0 +1,6 @@
+{
+  "name": "Selby & Son Glazing",
+  "description": "uPVC & Aluminium Glazing Specialists across Loughborough and surrounding areas. High quality windows, doors, bi-fold doors, conservatories and repairs.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
